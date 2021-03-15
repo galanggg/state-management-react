@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { TodoProvider } from './components/ExampleContext';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <TodoProvider>
+    <App max={20} step={5} />
+  </TodoProvider>,
   document.getElementById('root')
 );
 
