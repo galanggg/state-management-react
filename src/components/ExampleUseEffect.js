@@ -1,5 +1,6 @@
 import React from 'react';
-import { useFetch } from '../utils/useFetch';
+// import { useFetch } from '../utils/useFetch';
+import { useFetch } from '../utils/useFetchReducer';
 import CharacterList from './CharacterList';
 
 const ExampleUseEffect = () => {
